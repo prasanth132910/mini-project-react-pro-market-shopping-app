@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ProGrad Lab | REACT | MINI PROJECT - PROMARKET
 
-## Available Scripts
+## Learning Goals
 
-In the project directory, you can run:
+In this exercise, the goal is to recollect all the concepts you have learned so far in react:
 
-### `npm start`
+- Components
+- Routing
+- Props and State
+- Forms
+- Axios,
+- REST API,
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Fork this repo
+2. Clone this repo
 
-### `npm test`
+Whenever you create a first significant change, you should make your first commit.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Follow these [guidelines to add, commit and push changes](https://github.com/FACEPrep-ProGrad/general-guidelines-labs-project-builders.git).
 
-### `npm run build`
+In the end of this document, you will find guidelines on how to submit the exercise.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Your task is to build a complete shopping cart using react. We would create a vegetable and fruit online market using react app. Your application involves the following features, 
+make sure you did not miss out the features specified below.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+API DETAILS
+https://api.mocki.io/v1/7bd0682b
+```
 
-### `npm run eject`
+Kindly see the output:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Image description](https://i1.faceprep.in/ProGrad/Progression-1.gif)
+![Image description](https://i1.faceprep.in/ProGrad/Progression-2.gif)
+![Image description](https://i1.faceprep.in/ProGrad/Progression-3.gif)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**You are free to logically decide and create components based on your application.**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### PROGRESSION 1 | DISPLAY PRODUCTS
+- Display all the fruits and vegetables in the home page.
 
-## Learn More
+### PROGRESSION 2 | ENLARGE PRODUCTS
+- When you click on the product it should give a magnified image with the product description.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### PROGRESSION 3 | ADD TO CART
+- Add product to the cart. Cart icon should be updated as and when product gets added.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### PROGRESSION 4 | QUANTITY
+- specify the quantity to be added to the shopping cart
 
-### Code Splitting
+### PROGRESSION 5 | CART QUANTITY
+- Inside the shopping cart the customer can increase or decrease the quantity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### PROGRESSION 6 | FILL DETAILS
+- When the customer checks the buy now option, The customer details and delivery address should be got with the help of a form.
 
-### Analyzing the Bundle Size
+### PROGRESSION 7 | CART TOTAL
+- The last option is generating the bill with applicable taxes, along with the shipping address of the product.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### BONUS 1 | PDF
+- Bonus task is to generate bill as a pdf.
 
-### Making a Progressive Web App
+### BONUS 2 | SEARCH AND FILTERS
+- Bonus task is to keep search and filter options
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Submission
 
-### Advanced Configuration
+If you didn't add, commit and push the changes you made, this is the last call. :smile:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+please share your github links with your Mentors. Your Mentor's will check up your work and provide feedback. 
 
-### Deployment
+## Summary
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you managed to do it, good job! :trophy:
 
-### `npm run build` fails to minify
+We are proud of you!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy Coding ProGrad ❤️!
+
