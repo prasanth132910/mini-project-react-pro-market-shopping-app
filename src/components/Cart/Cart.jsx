@@ -33,6 +33,24 @@ export default class Cart extends React.Component {
         })
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps !== this.props) {
+            this.setState(() => {
+                let totalPrice = 0
+                let ids = Object.keys(this.props.cartItems)
+
+                ids.forEach(item => {
+                    totalPrice += (this.props.cartItems[item].quantity * this.props.cartItems[item].price)
+                })
+
+                return {
+                    total: totalPrice
+                }
+            })
+        }
+    }
+
+
     render() {
 
         let ids = Object.keys(this.props.cartItems)
@@ -45,7 +63,7 @@ export default class Cart extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {ids.map(id => <CartItem key={id} {...this.props.cartItems[id]} calculateTotal={this.calculateTotal} />)}
+                        {ids.map(id => <CartItem key={id} {...this.props.cartItems[id]} id={id} calculateTotal={this.calculateTotal} updateCartQuantity={this.props.updateCartQuantity} />)}
                     </tbody>
                     <tfoot>
                         <tr>

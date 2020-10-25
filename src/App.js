@@ -56,13 +56,44 @@ export default class App extends Component {
 
   }
 
-  render() {
+  updateCartQuantity = (type, id) => {
 
+    if (type === "inc") {
+      this.setState(prevState => {
+        return {
+          cart: {
+            ...prevState.cart,
+            [id]: {
+              ...prevState.cart[id],
+              quantity: prevState.cart[id].quantity + 1
+            }
+          }
+        }
+      })
+    }
+
+    else if (type === "dec" && this.state.cart[id].quantity > 1) {
+      this.setState(prevState => {
+        return {
+          cart: {
+            ...prevState.cart,
+            [id]: {
+              ...prevState.cart[id],
+              quantity: prevState.cart[id].quantity - 1
+            }
+          }
+        }
+      })
+    }
+
+  }
+
+  render() {
     return (
       <React.Fragment>
         <Router>
           <Navbar showCart={this.displayCart} totalItems={Object.keys(this.state.cart).length} />
-          {this.state.showCart && <Cart cartItems={this.state.cart} />}
+          {this.state.showCart && <Cart cartItems={this.state.cart} updateCartQuantity={this.updateCartQuantity} />}
           <Switch>
             <Route exact path="/">
               <Home products={this.state.products} getItem={this.getItem} addToCart={this.addToCart} />
